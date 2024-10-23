@@ -1,18 +1,20 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   min-height: 100vh;
   font-family: "Space Grotesk", sans-serif;
-  
+  margin-bottom: 500px;
 }
 
 nav {
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   min-height: 68px;
+  width: 100vw;
 }
 
 nav ul {
@@ -39,16 +41,16 @@ nav a {
 }
 
 nav a:hover {
-  color: #B9FF66;
+  color: #b9ff66;
 }
 
 nav li:first-child {
   margin-right: auto;
 }
 
-nav button{
+nav button {
   height: 68px;
-  width: 231px ;
+  width: 231px;
   border-radius: 14px;
   background-color: white;
   margin: 0;
@@ -57,12 +59,12 @@ nav button{
   cursor: pointer;
 }
 
-nav button:hover{
-  background-color: #B9FF66;
+nav button:hover {
+  background-color: #b9ff66;
 }
 
-.nav-logo{
-  height: 36px;
+.nav-logo {
+  height: 23px;
 }
 
 .sidebar {
@@ -89,6 +91,170 @@ nav button:hover{
   width: 100%;
 }
 
+.section-1 {
+  width: 100vw;
+}
+
+.section-1 img {
+  max-width: 429px;
+  max-height: 310px;
+}
+
+.section-1 h1 {
+  text-align: left;
+  line-height: 50px;
+  font-size: 35px;
+  color: #000000;
+  max-width: 390px;
+  max-height: 165px;
+  margin-top: 10px;
+}
+
+.section-1 p {
+  line-height: 28px;
+  font-size: 20px;
+}
+
+.section-1 button {
+  background-color: #191a23;
+  color: #ffffff;
+  min-width: 390px;
+  min-height: 68px;
+  border-radius: 14px;
+  font-size: 20px;
+  line-height: 28px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.section-2 {
+  display: grid;
+  justify-items: center;
+  margin-top: 39px;
+}
+
+.section-2 h2 {
+  background-color: #b9ff66;
+  max-width: 161px;
+  max-height: 46px;
+  padding: 0 7px 0 7px;
+  border-radius: 4px;
+}
+
+.section-2 p {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  line-height: 28px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 60px;
+  overflow: hidden;
+}
+
+.box {
+  background-color: #f3f3f3;
+  border-radius: 45px;
+  border: 1px solid #191a23;
+  border-bottom: 5px solid black;
+  min-height: 322px;
+  position: relative;
+}
+
+.box h3 {
+  position: absolute;
+  background-color: #b9ff66;
+  border-radius: 7px;
+  top: 50px;
+  left: 50px;
+}
+.second-header {
+  margin-top: 23px;
+  border-radius: 7px;
+  padding: 0 7px 0 7px;
+}
+.box .img-1 {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+}
+
+.img-2 {
+  max-width: 165px;
+  max-height: 129px;
+}
+
+.box .img-2 {
+  position: absolute;
+  right: 40px;
+  bottom: 50px;
+}
+
+.box-2 {
+  background-color: #b9ff66;
+  border-radius: 45px;
+  border: 1px solid #191a23;
+  border-bottom: 5px solid black;
+  min-height: 322px;
+  position: relative;
+}
+
+.box-2 h3 {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: #ffffff;
+}
+
+.box-2 .img-1 {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+}
+
+.box-2 .img-2 {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+}
+
+.box-3 {
+  background-color: #191a23;
+  border-radius: 45px;
+  border: 1px solid #191a23;
+  border-bottom: 5px solid #191a23;
+  min-height: 322px;
+  position: relative;
+}
+
+.box-3 h3 {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: #ffffff;
+}
+
+.box-3 .img-1 {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+}
+
+.box-3 .img-2 {
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+}
+
 @media (max-width: 800px) {
   .hideOnMobile {
     display: none;
@@ -101,11 +267,8 @@ nav button:hover{
   }
 }
 
-
-@media(min-width:800px){
-  #menuIcon{
+@media (min-width: 800px) {
+  #menuIcon {
     display: none;
   }
 }
-
-
