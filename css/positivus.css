@@ -128,13 +128,13 @@ nav button:hover {
   cursor: pointer;
 }
 
-.section-2 {
+.heading {
   display: grid;
   justify-items: center;
   margin-top: 39px;
 }
 
-.section-2 h2 {
+.heading h2 {
   background-color: #b9ff66;
   max-width: 161px;
   max-height: 46px;
@@ -142,10 +142,15 @@ nav button:hover {
   border-radius: 4px;
 }
 
-.section-2 p {
+.heading p {
   margin-top: 30px;
-  margin-bottom: 30px;
   line-height: 28px;
+  text-align: center;
+}
+
+.heading .studies {
+  max-width: 240px;
+  max-height: 46px;
 }
 
 .container {
@@ -168,6 +173,7 @@ nav button:hover {
   border-bottom: 5px solid black;
   min-height: 322px;
   position: relative;
+  margin-top: 30px;
 }
 
 .box h3 {
@@ -176,6 +182,7 @@ nav button:hover {
   border-radius: 7px;
   top: 50px;
   left: 50px;
+  padding: 0 7px 0 7px;
 }
 .second-header {
   margin-top: 23px;
@@ -206,6 +213,7 @@ nav button:hover {
   border-bottom: 5px solid black;
   min-height: 322px;
   position: relative;
+  margin-top: 30px;
 }
 
 .box-2 h3 {
@@ -213,6 +221,8 @@ nav button:hover {
   top: 50px;
   left: 50px;
   background-color: #ffffff;
+  border-radius: 7px;
+  padding: 0 7px 0 7px;
 }
 
 .box-2 .img-1 {
@@ -234,6 +244,7 @@ nav button:hover {
   border-bottom: 5px solid #191a23;
   min-height: 322px;
   position: relative;
+  margin-top: 30px;
 }
 
 .box-3 h3 {
@@ -241,6 +252,8 @@ nav button:hover {
   top: 50px;
   left: 50px;
   background-color: #ffffff;
+  border-radius: 7px;
+  padding: 0 7px 0 7px;
 }
 
 .box-3 .img-1 {
@@ -253,6 +266,95 @@ nav button:hover {
   position: absolute;
   right: 50px;
   bottom: 50px;
+}
+
+.box-4 {
+  background-color: #f3f3f3;
+  margin-top: 70px;
+  border-radius: 45px;
+  min-height: 370px;
+  padding: 50px;
+  
+  
+}
+
+.box-4 button {
+  background-color: #191a23;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 28px;
+  max-height: 4.25rem;
+  max-width: 18.125rem;
+  padding: 20px;
+  border-radius: 14px;
+  border: none;
+  margin-top: 20px;
+}
+
+
+
+.box-4 h3 {
+  font-size: 28px;
+}
+
+.box-4 p {
+  line-height: 28px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.heading-2 .studies {
+  background-color: #b9ff66;
+  max-height: 46px;
+  max-width: 240px;
+  border-radius: 7px;
+  margin-top: 60px;
+}
+
+.heading-2 p {
+  text-align: center;
+}
+
+.heading-2 h2 {
+  background-color: #b9ff66;
+  display: inline-block;
+  margin: auto;
+}
+
+.slider-container-1{
+  margin-top: 40px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  display: grid;
+  justify-content: flex-start;
+  padding: 20px 0;
+  scroll-behavior: smooth;
+}
+
+.card-slider {
+  display: flex;
+  gap: 10px; /* Spacing between the cards */
+}
+
+.slider-container-1 .card-1{
+background-color: #191a23;
+color: #ffffff;
+min-width: 350px;
+min-height: 252px;
+border-radius: 45px;
+padding: 42px;
+scroll-snap-align: start;
+
+}
+
+.slider-container-1 img{
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.slider-container-1 p {
+  line-height: 28px;
+  font-size: 20px;
 }
 
 @media (max-width: 800px) {
