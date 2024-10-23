@@ -357,6 +357,36 @@ scroll-snap-align: start;
   font-size: 20px;
 }
 
+.card-block{
+  margin-top: 10px;
+}
+
+.card-block .card{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  background-color: #f3f3f3;
+  border: 1px solid #191a23;
+  border-bottom: 6px solid #191a23;
+  border-radius: 45px;
+  min-width: 392px;
+  min-height: 98px;
+  padding: 37px;
+  margin-top: 20px;
+}
+
+.card-block .card p{
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+  white-space: nowrap;
+}
+
+.icon{
+  margin: auto;
+}
+
+
 @media (max-width: 800px) {
   .hideOnMobile {
     display: none;
