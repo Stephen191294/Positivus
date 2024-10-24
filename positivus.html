@@ -239,7 +239,7 @@
       <div class="grid-container-2">
         <div class="team-box">
           <div class="team-content">
-            <img src="image/Picture.png" alt="team" />
+            <img class="team-img" src="image/Picture.png" alt="team" />
             <div>
               <h4>John Smith</h4>
               <p class="team-text">CEO and Founder</p>
@@ -254,7 +254,7 @@
         </div>
         <div class="team-box">
           <div class="team-content">
-            <img src="image/Picture (1).png" alt="team" />
+            <img class="team-img" src="image/Picture (1).png" alt="team" />
             <div>
               <h4>Jane Doe</h4>
               <p class="team-text">Director of Operations</p>
@@ -269,7 +269,7 @@
         </div>
         <div class="team-box">
           <div class="team-content">
-            <img src="image/Picture3.png" alt="team" />
+            <img class="team-img" src="image/Picture3.png" alt="team" />
             <div>
               <h4>Michael Brown</h4>
               <p class="team-text">Senior SEO Specialist</p>
@@ -284,7 +284,7 @@
         </div>
         <div class="team-box">
           <div class="team-content">
-            <img src="image/Picture(4).png" alt="team" />
+            <img class="team-img" src="image/Picture(4).png" alt="team" />
             <div>
               <h4>Emily Johnson</h4>
               <p class="team-text">PPC Manager</p>
@@ -354,13 +354,13 @@
         <p>Connect with Us: Let's Discuss Your Digital Marketing Needs</p>
       </div>
       <div class="form-container">
-        <form>
+        <form class="radio-form">
           <label class="custom-radio">
             <input class="radio-1" type="radio" name="option" value="1" />
             <span class="radio-circle"></span>
             Say Hi
           </label>
-          <label class="custom-radio">
+          <label style="margin-left: 60px;" class="custom-radio">
             <input class="radio-2" type="radio" name="option" value="1" />
             <span class="radio-circle"></span>
             Get a Quote
@@ -374,15 +374,15 @@
             name="name"
             placeholder="Enter your name"
           />
-          <label for="name">Name</label>
+          <label for="name">Email*</label>
           <input
             type="text"
             id="name"
             name="name"
             placeholder="Enter your name"
           />
-          <label for="name">Message</label>
-          <textarea type="text" name="" id=""></textarea>
+          <label for="name">Message*</label>
+          <textarea type="text" name="" id="" placeholder="Message"></textarea>
         </div>
       </div>
       <button class="send-msg">Send Message</button>
@@ -399,7 +399,7 @@
         <p>Phone: 555-567-8901</p>
         <p>Address: 1234 Main St
           Moonstone City, Stardust State 12345</p>
-          <div class="footer-input">
+          <div class="footer-input-div">
             <form action="">
               <input type="text" placeholder="Email">
             </form>

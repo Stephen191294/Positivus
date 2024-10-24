@@ -378,8 +378,15 @@ nav button:hover {
   white-space: nowrap;
 }
 
+.card{
+  position: relative;
+}
+
 .icon {
-  margin: auto;
+  
+  position: absolute;
+  top:40px;
+  right: 20px;
 }
 
 .team-content {
@@ -408,10 +415,13 @@ nav button:hover {
 h4 {
   white-space: nowrap;
   margin-top: 90px;
+  margin-left: 23px;
 }
 .team-box .team-text {
-  white-space: nowrap;
+  white-space: wrap;
   margin-bottom: 20px;
+  margin-left: 23px;
+
 }
 .team-box hr {
   color: black;
@@ -420,6 +430,10 @@ h4 {
 
 .team-content {
   position: relative;
+}
+
+.team-img{
+  margin-top: 27px;
 }
 
 .social {
@@ -441,7 +455,7 @@ h4 {
 
 .carousel-container {
   position: relative;
-  width: 100%;
+  min-width: 390px;
   min-height: 554px;
   margin: auto;
   overflow: hidden;
@@ -458,13 +472,14 @@ h4 {
 }
 
 .carousel-item {
-  min-width: 105%;
+  min-width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 10px;
+  margin-right: 60px;
   position: relative;
+ 
 }
 
 .carousel-item .info {
@@ -518,6 +533,10 @@ h4 {
   border-radius: 45px;
   padding: 30px;
   margin-top: 30px;
+}
+
+.radio-form{
+  margin-bottom: 27px;
 }
 
 .form-container {
@@ -591,6 +610,7 @@ textarea{
   width: 100%;
   min-height: 132px;
   border-radius: 14px;
+  padding: 20px;
 }
 
 /* Styling the input */
@@ -634,7 +654,7 @@ footer{
   color: #ffffff;
   margin-top: 22px;
   text-align: center;
-  width: 100vw;
+  min-width: 430px ;
   padding-bottom: 350px;
 }
 
@@ -645,7 +665,10 @@ footer button {
   min-width: 330px;
   border-radius: 14px;
   font-size: 20px;
-  margin-top: 10px;
+  margin-top: 20px;
+  
+  
+
 }
 
 footer .footer-logo{
@@ -684,10 +707,16 @@ footer input{
   max-height: 66px;
 }
 
-.footer-input{
+.footer-input-div{
   background-color: #292A32;
   padding: 30px;
   margin-top: 37px;
+  
+}
+
+.footer-input-div input{
+  min-height: 66px;
+  min-width: 330px;
 }
 
 
