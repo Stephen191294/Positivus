@@ -274,8 +274,6 @@ nav button:hover {
   border-radius: 45px;
   min-height: 370px;
   padding: 50px;
-  
-  
 }
 
 .box-4 button {
@@ -289,9 +287,8 @@ nav button:hover {
   border-radius: 14px;
   border: none;
   margin-top: 20px;
+  cursor: pointer;
 }
-
-
 
 .box-4 h3 {
   font-size: 28px;
@@ -321,7 +318,7 @@ nav button:hover {
   margin: auto;
 }
 
-.slider-container-1{
+.slider-container-1 {
   margin-top: 40px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -336,18 +333,17 @@ nav button:hover {
   gap: 10px; /* Spacing between the cards */
 }
 
-.slider-container-1 .card-1{
-background-color: #191a23;
-color: #ffffff;
-min-width: 350px;
-min-height: 252px;
-border-radius: 45px;
-padding: 42px;
-scroll-snap-align: start;
-
+.slider-container-1 .card-1 {
+  background-color: #191a23;
+  color: #ffffff;
+  min-width: 350px;
+  min-height: 252px;
+  border-radius: 45px;
+  padding: 42px;
+  scroll-snap-align: start;
 }
 
-.slider-container-1 img{
+.slider-container-1 img {
   margin-top: 20px;
   cursor: pointer;
 }
@@ -357,11 +353,11 @@ scroll-snap-align: start;
   font-size: 20px;
 }
 
-.card-block{
+.card-block {
   margin-top: 10px;
 }
 
-.card-block .card{
+.card-block .card {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
@@ -375,17 +371,73 @@ scroll-snap-align: start;
   margin-top: 20px;
 }
 
-.card-block .card p{
+.card-block .card p {
   font-size: 20px;
   line-height: 28px;
   color: #000000;
   white-space: nowrap;
 }
 
-.icon{
+.icon {
   margin: auto;
 }
 
+.team-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.team-box {
+  background-color: #ffffff;
+  border-radius: 45px;
+  border: 1px solid #191a23;
+  border-bottom: 5px solid black;
+  min-height: 294px;
+  position: relative;
+  margin-top: 30px;
+  padding: 26px;
+}
+
+.team-box p {
+  line-height: 28px;
+  font-size: 20px;
+}
+
+h4 {
+  white-space: nowrap;
+  margin-top: 90px;
+}
+.team-box .team-text {
+  white-space: nowrap;
+  margin-bottom: 20px;
+}
+.team-box hr {
+  color: black;
+  border: 1px solid black;
+}
+
+.team-content {
+  position: relative;
+}
+
+.social {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.grid-container-2 button {
+  background-color: #191a23;
+  color: #ffffff;
+  min-width: 390px;
+  min-height: 68px;
+  font-size: 20px;
+  line-height: 28px;
+  border-radius: 14px;
+  margin-top: 38px;
+}
 
 @media (max-width: 800px) {
   .hideOnMobile {
