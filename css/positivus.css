@@ -634,7 +634,7 @@ footer{
   color: #ffffff;
   margin-top: 22px;
   text-align: center;
-  width: 100%;
+  width: 100vw;
   padding-bottom: 350px;
 }
 
@@ -680,7 +680,16 @@ footer h4 {
 
 footer input{
   background-color: #191a23;
+  max-width: 330px;
+  max-height: 66px;
 }
+
+.footer-input{
+  background-color: #292A32;
+  padding: 30px;
+  margin-top: 37px;
+}
+
 
 footer .footer-social{
   margin-top: 44px;
