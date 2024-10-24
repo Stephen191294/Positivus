@@ -9,3 +9,25 @@ function hideSidebar(){
 }
 
 
+const carousel = document.querySelector('.carousel');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+const items = document.querySelectorAll('.carousel-item');
+
+let currentIndex = 0;
+const totalItems = items.length;
+
+function updateCarouselPosition() {
+  const offset = -currentIndex * 100; // Move carousel by 100% for each item
+  carousel.style.transform = `translateX(${offset}%)`;
+}
+
+prevBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex === 0) ? totalItems - 1 : currentIndex - 1;
+  updateCarouselPosition();
+});
+
+nextBtn.addEventListener('click', () => {
+  currentIndex = (currentIndex === totalItems - 1) ? 0 : currentIndex + 1;
+  updateCarouselPosition();
+});

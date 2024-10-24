@@ -7,7 +7,7 @@
 body {
   min-height: 100vh;
   font-family: "Space Grotesk", sans-serif;
-  margin-bottom: 500px;
+
 }
 
 nav {
@@ -437,6 +437,253 @@ h4 {
   line-height: 28px;
   border-radius: 14px;
   margin-top: 38px;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  min-height: 554px;
+  margin: auto;
+  overflow: hidden;
+  background-color: #191a23;
+  border-radius: 45px;
+  margin-top: 40px;
+}
+
+.carousel {
+  display: flex;
+  background-color: #191a23;
+  padding: 30px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 105%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+  position: relative;
+}
+
+.carousel-item .info {
+  position: absolute;
+  top: 50px;
+}
+
+.carousel-image {
+  width: 100px; /* Adjust size as needed */
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.carousel-container h3 {
+  color: #b9ff66;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.carousel-container p {
+  color: #ffffff;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 90%;
+  transform: translateY(-50%);
+  background-color: #191a23;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.prev-btn {
+  left: 20px;
+}
+
+.next-btn {
+  right: 20px;
+}
+
+
+/*form start*/
+.form-container {
+  background-color: #f3f3f3;
+  min-height: 540px;
+  min-width: 380px;
+  border-radius: 45px;
+  padding: 30px;
+  margin-top: 30px;
+}
+
+.form-container {
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+/* Hide default radio buttons */
+.custom-radio input[type="radio"] {
+  display: none;
+}
+
+/* Style the custom radio button */
+.custom-radio {
+  align-items: center;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.radio-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+}
+
+.radio-circle::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: background-color 0.3s ease;
+}
+
+/* Change the border color of the custom radio button when selected */
+.custom-radio input[type="radio"]:checked + .radio-circle {
+  border-color: #b9ff66; /* Change this to any color you like */
+}
+
+/* Change the inner circle color when the radio button is selected */
+.custom-radio input[type="radio"]:checked + .radio-circle::before {
+  background-color: #b9ff66; /* Change this to the desired color */
+}
+
+/* Form group to contain label and input */
+.form-group {
+  display: flex;
+  flex-direction: column; /* Align label and input vertically */
+  align-items: flex-start; /* Align items to the left */
+  margin-bottom: 15px;
+  width: 100%; /* Ensures input takes the full width of the container */
+}
+
+/* Styling the label */
+label {
+  font-size: 14px;
+  margin-bottom: 10px; /* Adds spacing between label and input */
+  text-align: left;
+  width: 100%; /* Ensures the label spans the full width of the container */
+  margin-top: 20px;
+}
+textarea{
+  width: 100%;
+  min-height: 132px;
+  border-radius: 14px;
+}
+
+/* Styling the input */
+input[type="text"] {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 14px;
+  width: 100%; /* Makes the input field take the full width of the form group */
+  
+ 
+}
+
+/* Add focus styling for input */
+input[type="text"]:focus {
+  border-color: #4caf50; /* Changes the border color when focused */
+  outline: none;
+}
+
+textarea[type="text"]:focus {
+  border-color: #4caf50; /* Changes the border color when focused */
+  outline: none;
+}
+
+/*form end*/
+
+
+.send-msg {
+  background-color: #191a23;
+  color: #ffffff;
+  min-width: 390px;
+  min-height: 68px;
+  font-size: 20px;
+  line-height: 28px;
+  border-radius: 14px;
+  margin-top: 38px;
+}
+
+footer{
+  background-color: #191a23;
+  color: #ffffff;
+  margin-top: 22px;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 350px;
+}
+
+footer button {
+  background-color: #b9ff66;
+  color: #000000;
+  min-height: 68px;
+  min-width: 330px;
+  border-radius: 14px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+footer .footer-logo{
+margin-top: 51px;
+}
+
+footer li {
+  margin-top: 15px;
+}
+
+footer ul{
+  margin-bottom: 37px;
+}
+
+footer p {
+  margin-top: 15px;
+}
+
+footer h4 {
+  background-color: #b9ff66;
+  color: #000000;
+  min-width: 330px;
+  min-height: 66px;
+  min-width: 115px ;
+  min-height: 23px;
+  display: inline;
+  border-radius: 5px;
+  padding-left: 7px;
+  padding-right: 7px;
+
+}
+
+footer input{
+  background-color: #191a23;
+}
+
+footer .footer-social{
+  margin-top: 44px;
 }
 
 @media (max-width: 800px) {
