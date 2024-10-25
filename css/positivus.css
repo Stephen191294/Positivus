@@ -372,6 +372,26 @@ nav button:hover {
   text-align: center;
 }
 
+
+
+@media (min-width:800px){
+  .heading{
+    display: flex;
+  align-items: center; 
+  
+  gap: 10px;
+  }
+  .heading p{
+    max-width: 580px;
+    text-align: left;
+    
+  }
+  .heading h2{
+    margin-top: 25px;
+  }
+}
+
+
 .heading-2 h2 {
   background-color: #b9ff66;
   display: inline-block;
