@@ -31,3 +31,20 @@ nextBtn.addEventListener('click', () => {
   currentIndex = (currentIndex === totalItems - 1) ? 0 : currentIndex + 1;
   updateCarouselPosition();
 });
+
+new WOW().init();
+
+
+
+
+
+
+
+function showTeam() {
+  const teamMemberOne = document.getElementById('teamBoxOne')
+  teamMemberOne.style.display = 'block';
+
+  const teamMemberTwo = document.getElementById('teamBoxTwo')
+  teamMemberTwo.style.display = 'block';
+}
+
