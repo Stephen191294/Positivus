@@ -984,7 +984,16 @@ textarea[type="text"]:focus {
     border-radius: 14px;
     margin-top: 40px;
     font-size: 20px;
+    cursor: pointer;
   }
+
+  .secondary-form-btn:hover{
+   background-color: #ffffff;
+   color:#191a23;
+   border: 1px solid #191a23;
+  }
+
+
   .send-msg {
     display: none;
   }
@@ -1157,7 +1166,15 @@ footer .footer-social {
   border-radius: 14px;
   margin-top: 58px;
   margin-bottom: 58px;
+  cursor: pointer;
 }
+
+.last-input-btn-div .last-btn:hover{
+  background-color: #191a23;
+  color: #b9ff66;
+  border: 1px solid #b9ff66;
+}
+
 
 .last-input {
   min-width: 249px;

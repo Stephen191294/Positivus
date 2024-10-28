@@ -45,13 +45,12 @@ function showTeam() {
 }
 
 
-// Function to toggle the image and background color for each card
 function setupToggle(elementId, iconId, originalSrc, newSrc) {
   const actionStep = document.getElementById(elementId);
   const iconImage = document.getElementById(iconId);
   let isIconToggled = false; 
 
-  iconImage.src = originalSrc; // Initialize the image
+  iconImage.src = originalSrc; 
 
   actionStep.addEventListener('click', function() {
       if (isIconToggled) {
@@ -71,7 +70,7 @@ function setupToggle(elementId, iconId, originalSrc, newSrc) {
   });
 }
 
-// Set up toggles for each card
+
 setupToggle('stepInfo', 'plusIcon', 'image/Icon(1).png', 'image/Negativeicon.png');
 setupToggle('actionStep', 'toggleIcon', 'image/Icon(1).png', 'image/Negativeicon.png');
 setupToggle('actionStep1', 'toggleIcon1', 'image/Icon(1).png', 'image/Negativeicon.png');
