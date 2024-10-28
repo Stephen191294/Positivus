@@ -502,7 +502,9 @@
             />
             <label for="name">Message*</label>
             <textarea type="" name="" id="" placeholder="Message"></textarea>
-            <button class="secondary-form-btn">Send Message</button>
+            <div classs="secondary-form-btn-div">
+              <button class="secondary-form-btn">Send Message</button>
+            </div>
           </div>
         </div>
         <img
@@ -511,7 +513,10 @@
           alt="form-img"
         />
       </div>
-      <button class="send-msg">Send Message</button>
+      <div class="send-msg-container">
+        <button class="send-msg">Send Message</button>
+      </div>
+      
       <footer>
         <div class="primary-footer-content">
           <img class="footer-logo" src="image/Logo (3).png" alt="logo" />
@@ -550,9 +555,15 @@
                 <a href="">Services</a>
               </li>
               <li class="list-icons">
-                <img src="image/Icon (2).png" alt="" />
-                <img src="image/Icon (3).png" alt="" />
-                <img src="image/Icon (4).png" alt="" />
+                <div>
+                  <img src="image/Icon (2).png" alt="" />
+                </div>
+                <div>
+                  <img src="image/Icon (3).png" alt="" />
+                </div>
+                <div>
+                  <img src="image/Icon (4).png" alt="" />
+                </div>
               </li>
             </ul>
           </div>
@@ -565,8 +576,12 @@
             </div>
 
             <div class="last-input-btn-div">
-              <input class="last-input" type="text" placeholder="Email" />
-              <button class="last-btn">Subscribe to news</button>
+              <div>
+                <input class="last-input" type="text" placeholder="Email" />
+              </div>
+              <div>
+                <button class="last-btn">Subscribe to news</button>
+              </div>
             </div>
           </div>
         </div>
