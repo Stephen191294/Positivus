@@ -541,6 +541,15 @@ nav button:hover {
   .slider-container-1-secondary img {
     margin-top: 20px;
   }
+
+ @media (min-width: 927px) and (max-width: 1139px){
+  .slider-container-1-secondary img{
+    margin-top: 100px;
+  }
+ }
+
+
+
   .slider-container-1-secondary .card-1 {
     border-right: 1px solid #ffffff;
     padding-right: 64px;
