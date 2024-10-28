@@ -612,6 +612,7 @@ nav button:hover {
 
 .card {
   position: relative;
+  cursor: pointer;
 }
 
 .icon {
