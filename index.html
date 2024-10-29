@@ -238,13 +238,29 @@
       </div>
 
       <div class="card-block">
-        <div onclick="showStep()" id="stepInfo" class="card">
-          <div>
-            <img src="image/01.png" alt="number" />
+        <div
+          style="display: flex; flex-direction: column"
+          onclick="showStep()"
+          id="stepInfo"
+          class="card"
+        >
+          <div style="display: flex">
+            <div>
+              <img src="image/01.png" alt="number" />
+            </div>
+            <p>Consultation</p>
           </div>
 
-          <p>Consultation</p>
           <img id="plusIcon" class="icon" src="image/Icon(1).png" alt="add" />
+          <div>
+            <hr class="line" />
+            <p class="card-txt">
+              During the initial consultation, we will discuss your business
+              goals and objectives, target audience, and current marketing
+              efforts. This will allow us to understand your needs and tailor
+              our services to best fit your requirements.
+            </p>
+          </div>
         </div>
 
         <div id="actionStep" class="card">
@@ -436,8 +452,10 @@
               truly cares about the success of our business. We highly recommend
               Positivus to any company looking to grow their online presence."
             </p>
-            <h3>John Smith</h3>
-            <p>Marketing Director at XYZ Corp</p>
+            <div class="dialogbox-div">
+              <h3>John Smith</h3>
+              <p>Marketing Director at XYZ Corp</p>
+            </div>
           </div>
           <div class="carousel-item">
             <img class="dialogbox-1" src="image/dialogbox.png" alt="image" />
@@ -448,8 +466,10 @@
               a significant increase in sales. Their team truly understands the
               digital landscape and delivers results!"
             </p>
-            <h3>Emma L.</h3>
-            <p>CEO of GreenWave Solutions</p>
+            <div class="dialogbox-div">
+              <h3>Emma L.</h3>
+              <p>CEO of GreenWave Solutions</p>
+            </div>
           </div>
           <div class="carousel-item">
             <img class="dialogbox-1" src="image/dialogbox.png" alt="image" />
@@ -460,8 +480,10 @@
               Their expertise and dedication make them an invaluable partner for
               any business looking to grow online."
             </p>
-            <h3>Mark T.</h3>
-            <p>Marketing Director at Clearview Inc</p>
+            <div class="dialogbox-div">
+              <h3>Mark T.</h3>
+              <p>Marketing Director at Clearview Inc</p>
+            </div>
           </div>
         </div>
         <button class="carousel-btn prev-btn">&#10094;</button>
@@ -516,7 +538,7 @@
       <div class="send-msg-container">
         <button class="send-msg">Send Message</button>
       </div>
-      
+
       <footer>
         <div class="primary-footer-content">
           <img class="footer-logo" src="image/Logo (3).png" alt="logo" />

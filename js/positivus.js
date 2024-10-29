@@ -45,31 +45,42 @@ function showTeam() {
 }
 
 
+
+
 function setupToggle(elementId, iconId, originalSrc, newSrc) {
   const actionStep = document.getElementById(elementId);
   const iconImage = document.getElementById(iconId);
-  let isIconToggled = false; 
+  const lineElements = document.querySelectorAll('.line'); // Select all elements with 'line' class
+  const cardTxtElements = document.querySelectorAll('.card-txt'); // Select all elements with 'card-txt' class
+  let isIconToggled = false;
 
-  iconImage.src = originalSrc; 
+  iconImage.src = originalSrc;
 
-  actionStep.addEventListener('click', function() {
-      if (isIconToggled) {
-          actionStep.style.backgroundColor = ''; 
-          iconImage.src = originalSrc; 
-          iconImage.alt = 'Original Image'; 
-          iconImage.style.width = '28px'; 
-          iconImage.style.height = '28px'; 
-      } else {
-          actionStep.style.backgroundColor = '#B9FF66'; 
-          iconImage.src = newSrc; 
-          iconImage.alt = 'Toggle Image'; 
-          iconImage.style.width = '28px'; 
-          iconImage.style.height = '28px'; 
-      }
-      isIconToggled = !isIconToggled; 
+  actionStep.addEventListener('click', function () {
+    if (isIconToggled) {
+      actionStep.style.backgroundColor = '';
+      iconImage.src = originalSrc;
+      iconImage.alt = 'Original Image';
+      iconImage.style.width = '28px';
+      iconImage.style.height = '28px';
+
+      // Hide elements with 'line' and 'card-txt' classes
+      lineElements.forEach((line) => line.style.display = 'none');
+      cardTxtElements.forEach((cardTxt) => cardTxt.style.display = 'none');
+    } else {
+      actionStep.style.backgroundColor = '#B9FF66';
+      iconImage.src = newSrc;
+      iconImage.alt = 'Toggle Image';
+      iconImage.style.width = '28px';
+      iconImage.style.height = '28px';
+
+      // Show elements with 'line' and 'card-txt' classes
+      lineElements.forEach((line) => line.style.display = 'block');
+      cardTxtElements.forEach((cardTxt) => cardTxt.style.display = 'block');
+    }
+    isIconToggled = !isIconToggled;
   });
 }
-
 
 setupToggle('stepInfo', 'plusIcon', 'image/Icon(1).png', 'image/Negativeicon.png');
 setupToggle('actionStep', 'toggleIcon', 'image/Icon(1).png', 'image/Negativeicon.png');
