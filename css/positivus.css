@@ -623,9 +623,9 @@ nav button:hover {
 .card {
   position: relative;
   cursor: pointer;
+  display: flex; 
+  flex-direction: column;
 }
-
-
 
 .icon {
   position: absolute;
@@ -633,15 +633,34 @@ nav button:hover {
   right: 20px;
 }
 
-.card-txt{
+.card-txt  {
   margin-top: 30px;
-  display: none ;
+  display: none;
+ 
 }
 
 .line{
   margin-top: 30px;
   display: none;
+  border: 1px solid #191a23;
+  max-width: 1114px;
 }
+
+.card-txt-1  {
+  display: none;
+  margin-top: 30px;
+}
+
+.line-1{
+  display: none;
+}
+
+
+.card-img-div{
+  display: flex;
+}
+
+
 
 .team-content {
   display: grid;

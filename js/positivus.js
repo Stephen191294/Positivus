@@ -50,8 +50,8 @@ function showTeam() {
 function setupToggle(elementId, iconId, originalSrc, newSrc) {
   const actionStep = document.getElementById(elementId);
   const iconImage = document.getElementById(iconId);
-  const lineElements = document.querySelectorAll('.line'); // Select all elements with 'line' class
-  const cardTxtElements = document.querySelectorAll('.card-txt'); // Select all elements with 'card-txt' class
+  const lineElements = actionStep.querySelectorAll('.line'); // Scoped to this card only
+  const cardTxtElements = actionStep.querySelectorAll('.card-txt'); 
   let isIconToggled = false;
 
   iconImage.src = originalSrc;
