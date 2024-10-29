@@ -623,7 +623,7 @@ nav button:hover {
 .card {
   position: relative;
   cursor: pointer;
-  display: flex; 
+  display: flex;
   flex-direction: column;
 }
 
@@ -633,34 +633,30 @@ nav button:hover {
   right: 20px;
 }
 
-.card-txt  {
+.card-txt {
   margin-top: 30px;
   display: none;
- 
 }
 
-.line{
+.line {
   margin-top: 30px;
   display: none;
   border: 1px solid #191a23;
   max-width: 1114px;
 }
 
-.card-txt-1  {
+.card-txt-1 {
   display: none;
   margin-top: 30px;
 }
 
-.line-1{
+.line-1 {
   display: none;
 }
 
-
-.card-img-div{
+.card-img-div {
   display: flex;
 }
-
-
 
 .team-content {
   display: grid;
@@ -797,7 +793,6 @@ h4 {
 .carousel-item .info {
   position: absolute;
   top: 30px;
-  
 }
 
 @media (min-width: 400px) {
@@ -806,7 +801,6 @@ h4 {
     max-height: 138px;
     margin-left: 5px;
     margin-right: 5px;
-   
   }
 }
 
@@ -849,16 +843,13 @@ h4 {
 }
 
 @media (min-width: 600px) {
-  .prev-btn{
+  .prev-btn {
     left: 200px;
   }
-  .next-btn{
-    right: 200px
+  .next-btn {
+    right: 200px;
   }
-
 }
-
-
 
 #teamBoxOne {
   /* display: none;*/
@@ -870,8 +861,6 @@ h4 {
   align-items: flex-start;
   width: 270px;
 }
-
-
 
 @media (min-width: 600px) {
   .dialogbox-div {
@@ -885,10 +874,6 @@ h4 {
     width: 500px;
   }
 }
-
-
-
-
 
 @media (min-width: 432px) {
   .dialogbox-1 {
@@ -911,31 +896,47 @@ h4 {
 .form-container {
   background-color: #f3f3f3;
   min-height: 540px;
-  min-width: 380px;
+  min-width: 100%; /* Adjusts for smaller screens */
+  max-width: 500px; /* Limits the width on larger screens */
   border-radius: 45px;
   padding: 30px;
-  margin-top: 30px;
+  margin: 30px auto; /* Centers the container */
+  box-sizing: border-box; /* Ensures padding is included in width */
+  font-size: 16px;
+  white-space: nowrap;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    padding: 20px; /* Reduces padding on smaller screens */
+    min-width: 100%; /* Full-width on smaller devices */
+    border-radius: 30px; /* Adjusts border-radius */
+  }
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    padding: 15px;
+    min-height: auto; /* Allows height to adjust with content */
+    border-radius: 20px;
+  }
+}
+
+.form-img {
+  position: absolute;
+  top: 0;
+  left: 831px;
+}
+
+@media (max-width: 431px) and (max-width: 1200px) {
+  .form-img {
+    display: none;
+  }
 }
 
 .radio-form {
   margin-bottom: 27px;
-}
-
-.form-container {
-  font-size: 16px;
-  white-space: nowrap;
-}
-
-@media (min-width: 432px) and (max-width: 8000px) {
-  .form-container {
-    position: relative;
-    /* min-width: 100%;*/
-    max-height: 773px;
-    padding-bottom: 62px;
-    /* padding-left: 100px;*/
-    padding-top: 62px;
-    padding-right: 0;
-  }
 }
 
 .custom-radio input[type="radio"] {
@@ -987,42 +988,70 @@ h4 {
   width: 100%;
 }
 
+/* General styling */
 label {
-  font-size: 14px;
-  margin-bottom: 10px;
+  font-size: 1rem; /* Adjusted to be scalable */
+  margin: 20px 0 10px;
   text-align: left;
   width: 100%;
-  margin-top: 20px;
-}
-textarea {
-  width: 80%;
-  min-height: 132px;
-  border-radius: 14px;
-  padding: 20px;
 }
 
-@media (min-width: 432px) and (max-width: 8000px) {
-  textarea {
-    max-width: 556px;
-  }
-
-  input {
-    max-height: 59px;
-    max-width: 556px;
-  }
-  .inner-form-container {
-    margin-left: 87px;
-  }
-}
-
+textarea,
 input[type="text"] {
-  padding: 10px;
-  font-size: 14px;
-  border: 1px solid #ccc;
+  width: 100%; /* Use full width within containers for better responsiveness */
   border-radius: 14px;
-  width: 100%;
+  padding: 1.25rem; /* Scalable padding */
+  font-size: 1rem; /* Consistent font sizing */
 }
 
+textarea {
+  min-height: 132px;
+  resize: vertical; /* Allows user to resize if needed */
+  
+}
+
+/* Media queries for more targeted responsiveness */
+@media (min-width: 432px) and (max-width: 1200px) {
+  textarea,
+  input[type="text"] {
+    max-width: 75vw; /* Sets a responsive max width */
+    padding: 1rem;
+  }
+
+  .inner-form-container {
+    margin-left: 5vw; /* Sets margin relative to viewport width */
+  }
+}
+
+@media (min-width: 1201px) {
+  textarea,
+  input[type="text"] {
+    max-width: 600px; /* Sets a fixed max width for larger screens */
+    padding: 1.25rem; /* Slightly larger padding for better usability */
+  }
+
+  .inner-form-container {
+    margin-left: auto; /* Centers the container */
+    margin-right: auto; /* Centers the container */
+    width: 80%; /* Sets a width for the container to avoid full width on very large screens */
+  }
+}
+
+@media (max-width: 431px) {
+  textarea,
+  input[type="text"] {
+    width: 90%;
+    max-width: 100%; /* Ensures it fills the container on smaller screens */
+    padding: 0.8rem;
+    
+  }
+
+  .inner-form-container {
+    margin-left: 0; /* Eliminates unnecessary side margin on small screens */
+  }
+}
+
+/* Focus state */
 input[type="text"]:focus,
 textarea:focus {
   border-color: #4caf50;
@@ -1095,36 +1124,17 @@ textarea:focus {
   }
 }
 
-@media (max-width: 432px) {
-  .form-img {
-    display: none;
-  }
-}
 
-@media (min-width: 400px) and (max-width: 8000px) {
-  .form-img {
-    position: absolute;
-    top: 0;
-    left: 870px;
-    z-index: 2;
-  }
-}
 
-@media (min-width: 432px) and (max-width: 1254px) {
-  .form-img {
-    display: none;
-  }
-
-  .send-msg {
-    display: none;
-  }
+.send-msg {
+  display: none;
 }
 
 footer {
   background-color: #191a23;
   color: #ffffff;
   margin-top: 22px;
-  max-width: 1241px;
+  max-width: 100vw;
   padding-bottom: 50px;
 }
 
@@ -1138,11 +1148,21 @@ footer {
 footer .first-btn {
   background-color: #b9ff66;
   color: #000000;
-  min-height: 68px;
-  min-width: 319px;
+  padding: 1rem; /* Internal spacing for flexibility */
+  width: 100%; /* Allows button to stretch to its container */
+  max-width: 319px; /* Prevents button from getting too wide */
+  min-height: 3.5rem; /* Relative unit for responsive height */
   border-radius: 14px;
-  font-size: 20px;
-  margin-top: 20px;
+  font-size: 1.25rem; /* Scales with the font size */
+  margin-top: 1.25rem; /* Scales margin with font size */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+@media (min-width: 600px) {
+  footer .first-btn {
+    font-size: 1.5rem; /* Slightly increase font size on larger screens */
+    max-width: 400px; /* Allow button to expand more on larger screens */
+  }
 }
 
 footer .footer-logo {
@@ -1160,7 +1180,6 @@ footer ul {
 footer p {
   margin-top: 15px;
   white-space: wrap;
-  
 }
 
 footer h4 {
@@ -1178,22 +1197,23 @@ footer h4 {
 
 footer .first-input {
   background-color: #191a23;
-  max-width: 330px;
-  max-height: 66px;
+  padding: 1rem; /* Adds some internal spacing for a flexible size */
+  width: 100%; /* Allows the button to stretch to its container */
+  max-width: 330px; /* Prevents it from getting too large on wide screens */
+  min-height: 3rem; /* Uses relative units for flexibility */
+  border-radius: 14px;
+  box-sizing: border-box; /* Ensures padding doesn't affect total width */
 }
 
 .footer-input-div {
   background-color: #292a32;
- padding-right: 30px;
- padding-top: 30px;
- padding-bottom: 30px;
- padding-left: 6px;
+  padding: 30px;
   margin-top: 37px;
 }
 
 .footer-input-div input {
   min-height: 66px;
- /*max-width: 330px;*/
+  /*max-width: 330px;*/
 }
 
 footer .footer-social {
@@ -1220,180 +1240,70 @@ footer .footer-social {
   text-align: center;
 }
 
-.secondary-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  list-style: none;
-  gap: 20px;
+.top ul{
+  display: flex; flex-direction: row; justify-content: space-between; list-style: none; margin-left: 60px ; margin-right: 60px;
 }
 
-.list-icons img {
-  margin-left: 20px;
-  cursor: pointer;
-  max-height: 30px;
-  min-width: 30px;
+.bottom{
+  display: flex; justify-content: space-between;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 50px;
 }
 
-.secondary-list .list-icons {
-  display: flex;
-  margin-right: 20px;
-}
 
-@media (min-width: 411px) and (max-width: 886px) {
-  .secondary-list .list-icons {
-    display: flex;
-    flex-direction: column;
-    height: 30px;
-    gap: 5px;
-  }
-}
-
-@media (min-width: 886px) and (max-width: 8000px) {
-  .secondary-list .list-icons {
-    margin-left: 164px;
-    display: flex;
-  }
-}
-
-.secondary-list .list-links {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 40px;
-  white-space: nowrap;
-}
-
-@media (min-width: 429px) and (max-width: 800px) {
-  .secondary-list .list-links {
-    margin-left: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-.secondary-list .list-links a {
-  color: #ffffff;
-}
-
-.secondary-footer-input {
-  display: flex;
-  background-color: #292a32;
+.bottom-input-btn{
+  background-color:#292a32;
   display: flex;
   align-items: center;
-  max-width: 634px;
-  max-height: 184px;
   border-radius: 14px;
-  margin-right: 61px;
-  margin-left: 61px;
-  padding-right: 40px;
   padding-left: 40px;
-}
-
-.last-input-btn-div {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  padding-right: 40px;
   gap: 20px;
-  background-color: #292a32;
-  border-radius: 14px;
-  padding-right: 40px;
-  padding-left: 40px;
-  margin-right: 61px;
-  max-width: 634px;
-  max-height: 184px;
+
+  
+}
+
+@media (max-width: 431px){
+  .bottom{
+    display: none;
+  }
+  .top{
+    display: none;
+  }
+}
+
+@media (min-width: 432px) and (max-width: 1200px){
+  .bottom-input-btn{
+    padding: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
 }
 
 
 
-.last-input-btn-div .last-btn {
+
+.bottom-input{
+  width: 185px;
+  height: 57px;
+  border-radius: 14px;
+  background-color: #191a23;
+  padding-left: 10px;
+  border: none;
+}
+
+.bottom-btn{
+  background-color: #b9ff66;
   min-width: 249px;
   min-height: 68px;
-  background-color: #b9ff66;
+  border-radius: 14px;
   font-size: 20px;
-  border-radius: 14px;
-  margin-top: 58px;
-  margin-bottom: 58px;
-  cursor: pointer;
-  margin-left: 10px;
-  white-space: nowrap;
 }
 
-.last-input-btn-div .last-btn:hover {
-  background-color: #191a23;
-  color: #b9ff66;
-  border: 1px solid #b9ff66;
-}
-
-.last-input {
-  min-width: 285px;
-  max-height: 38px;
-  padding: 22px;
-  background-color: #191a23;
-  margin-top: 58px;
-  border-radius: 14px;
-  border: none;
-
-}
-
-
-
-
-@media (max-width: 432px){
-  .last-input-btn-div{
-    display: flex;
-    flex-direction: column;
-    gap: -0;
-    border-radius: 14px;
-    padding-right: 40px;
-    padding-left: 40px;
-    margin-right: 61px;
-    max-width: 400px;
-    max-height: 400px;
-  }
-}
-
-
-
-
-
-
-@media (max-width: 601px) and (min-width: 1180px) {
-  .last-input-btn-div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-height: 500px;
-    min-width: 100%;
-    margin-left: 20px;
-    
-  }
-}
-
-@media (min-width: 431px) and (max-width: 900px) {
-  .last-input-btn-div .last-btn {
-    width: 100%;
-  }
-}
-
-.bottom {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-bottom: 51px;
-  margin-left: 60px;
-  display: none;
-}
-
-
-.top {
-  margin-left: 60px;
-  margin-top: 58px;
-  display: none;
-}
-
-@media (min-width: 432px) and (max-width: 8000px) {
-  .bottom {
-    display: grid;
-  }
-  .top {
-    display: block;
-  }
+.top-link{
+  color: #ffffff;
 }
 
 .copyright {
@@ -1402,27 +1312,13 @@ footer .footer-social {
   margin-left: 60px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 432px) {
   .copyright {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
   }
 }
 @media (max-width: 800px) {
