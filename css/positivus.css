@@ -1104,7 +1104,7 @@ footer .first-btn {
   background-color: #b9ff66;
   color: #000000;
   min-height: 68px;
-  min-width: 330px;
+  min-width: 319px;
   border-radius: 14px;
   font-size: 20px;
   margin-top: 20px;
@@ -1148,13 +1148,14 @@ footer .first-input {
 
 .footer-input-div {
   background-color: #292a32;
-  padding: 30px;
+ padding-right: 30px;
+ padding-left: 6px;
   margin-top: 37px;
 }
 
 .footer-input-div input {
   min-height: 66px;
-  min-width: 330px;
+ /*max-width: 330px;*/
 }
 
 footer .footer-social {
