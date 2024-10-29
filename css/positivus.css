@@ -796,13 +796,17 @@ h4 {
 
 .carousel-item .info {
   position: absolute;
-  top: 50px;
+  top: 30px;
+  
 }
 
 @media (min-width: 400px) {
   .carousel-item .info {
     max-width: 502px;
     max-height: 138px;
+    margin-left: 5px;
+    margin-right: 5px;
+   
   }
 }
 
@@ -837,12 +841,24 @@ h4 {
 }
 
 .prev-btn {
-  left: 300px;
+  left: 20px;
 }
 
 .next-btn {
-  right: 300px;
+  right: 20px;
 }
+
+@media (min-width: 600px) {
+  .prev-btn{
+    left: 200px;
+  }
+  .next-btn{
+    right: 200px
+  }
+
+}
+
+
 
 #teamBoxOne {
   /* display: none;*/
@@ -852,8 +868,27 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 500px;
+  width: 270px;
 }
+
+
+
+@media (min-width: 600px) {
+  .dialogbox-div {
+    width: 500px;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1024px) {
+  .dialogbox-div {
+    width: 500px;
+  }
+}
+
+
+
+
 
 @media (min-width: 432px) {
   .dialogbox-1 {
@@ -1125,6 +1160,7 @@ footer ul {
 footer p {
   margin-top: 15px;
   white-space: wrap;
+  
 }
 
 footer h4 {
@@ -1148,7 +1184,9 @@ footer .first-input {
 
 .footer-input-div {
   background-color: #292a32;
- padding-right: 30px;
+ padding-right: 6px;
+ padding-top: 30px;
+ padding-bottom: 30px;
  padding-left: 6px;
   margin-top: 37px;
 }
@@ -1160,6 +1198,10 @@ footer .first-input {
 
 footer .footer-social {
   margin-top: 44px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 400px) {
@@ -1330,9 +1372,11 @@ footer .footer-social {
 
 @media (max-width: 432px) {
   .copyright {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin: 0;
   }
 }
 @media (max-width: 800px) {
