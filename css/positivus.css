@@ -158,10 +158,9 @@ nav li:first-child {
   padding-right: 1.25rem;
   width: 100%;
   text-align: center;
-  
 }
 
-.heading-1 h2{
+.heading-1 h2 {
   white-space: nowrap;
 }
 
@@ -171,7 +170,7 @@ nav li:first-child {
   margin-bottom: 1.875rem;
 }
 
-.heading-2{
+.heading-2 {
   margin-top: 5.9375rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -180,18 +179,18 @@ nav li:first-child {
   margin-bottom: 30px;
 }
 
-.heading-2 p{
+.heading-2 p {
   margin-top: 30px;
 }
 
-.heading-2-div{
+.heading-2-div {
   display: flex;
   flex-direction: column;
   width: 226px;
   margin: auto;
 }
 
-.heading-3-div{
+.heading-3-div {
   display: flex;
   flex-direction: column;
   width: 180px;
@@ -199,20 +198,18 @@ nav li:first-child {
   margin-top: 0;
 }
 
-.heading-2-div .heading-top{
-  background-color: #b9ff66;
-  white-space: nowrap;
- padding: 7px;
-  border-radius: 7px;
-}
-
-.heading-3-div .heading-bottom{
+.heading-2-div .heading-top {
   background-color: #b9ff66;
   white-space: nowrap;
   padding: 7px;
   border-radius: 7px;
-  
- 
+}
+
+.heading-3-div .heading-bottom {
+  background-color: #b9ff66;
+  white-space: nowrap;
+  padding: 7px;
+  border-radius: 7px;
 }
 
 .heading-1 h2 {
@@ -297,7 +294,7 @@ nav li:first-child {
   padding: 0 7px 0 7px;
 }
 
-.box-2 .second-header{
+.box-2 .second-header {
   margin-top: 1.5rem;
 }
 
@@ -336,7 +333,7 @@ nav li:first-child {
   padding: 0 0.4375rem 0 0.4375rem;
 }
 
-.box-3 .second-header{
+.box-3 .second-header {
   margin-top: 1.5rem;
 }
 
@@ -368,13 +365,11 @@ nav li:first-child {
   background-color: #f3f3f3;
   border-radius: 45px;
   padding: 3.125rem;
-  
 }
 
 .section-3-btn-div {
   display: flex;
   justify-content: center;
-  
 }
 
 .section-3-box button {
@@ -399,15 +394,13 @@ nav li:first-child {
   line-height: 28px;
   font-size: 20px;
   margin-top: 20px;
-margin-bottom: 20px;
+  margin-bottom: 20px;
   width: 290px;
-  
 }
 
 .section-3-box .make-happen-img {
   display: none;
 }
-
 
 .slider-container {
   margin-top: 40px;
@@ -419,10 +412,7 @@ margin-bottom: 20px;
   scroll-behavior: smooth;
   max-height: 252px;
   margin-left: 20px;
- 
-
 }
-
 
 .card-slider {
   display: flex;
@@ -444,9 +434,7 @@ margin-bottom: 20px;
   cursor: pointer;
 }
 
-
 .card-block {
-
   width: 100%;
 }
 
@@ -463,7 +451,6 @@ margin-bottom: 20px;
   white-space: wrap;
 }
 
-
 .card-block .card p {
   font-size: 16px;
   color: #000000;
@@ -471,7 +458,7 @@ margin-bottom: 20px;
   margin-left: 25px;
 }
 
-.card-span{
+.card-span {
   display: block;
 }
 .card-block .card img {
@@ -502,7 +489,6 @@ margin-bottom: 20px;
   margin-top: 30px;
   display: none;
   border: 1px solid #191a23;
-  
 }
 
 .card-txt-1 {
@@ -517,8 +503,6 @@ margin-bottom: 20px;
 .card-img-div {
   display: flex;
 }
-
-
 
 .team-content {
   display: grid;
@@ -573,8 +557,7 @@ h4 {
   right: 0;
 }
 
-
-.team-btn-div{
+.team-btn-div {
   width: 100%;
 }
 
@@ -597,16 +580,12 @@ h4 {
   border: 1px solid #191a23;
 }
 
-
-.section-4{
+.section-4 {
   width: 100%;
   margin-top: 4.0625rem;
   padding-left: 1.25rem;
   padding-right: 1.875rem;
 }
-
-
-
 
 .carousel-container {
   position: relative;
@@ -703,21 +682,16 @@ h4 {
   color: #ffffff;
 }
 
-.carousel-container  .dialogbox-2{
+.carousel-container .dialogbox-2 {
   display: none;
 }
 
-
-
-
-
-.section-5{
+.section-5 {
   width: 100%;
   margin-top: 4.0625rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
-
 
 .form-container {
   background-color: #f3f3f3;
@@ -862,13 +836,6 @@ textarea:focus {
   align-self: center;
 }
 
-
-
-
-
-
-
-
 footer {
   background-color: #191a23;
   color: #ffffff;
@@ -915,7 +882,6 @@ footer h4 {
   height: 1.4375rem;
   margin: auto;
   border-radius: 0.4375rem;
- 
 }
 
 footer .first-input {
@@ -970,7 +936,6 @@ footer .footer-social {
   display: none;
 }
 
-
 .bottom-input-btn {
   background-color: #292a32;
   display: flex;
@@ -1004,7 +969,6 @@ footer .footer-social {
   background-color: #191a23;
   color: #b9ff66;
   border: 1px solid #b9ff66;
-  
 }
 
 .copyright {
@@ -1013,21 +977,44 @@ footer .footer-social {
   margin-left: 60px;
 }
 
+@media (min-width: 600px) {
+  .section-1 {
+    position: relative;
+  }
 
+  .section-1 img {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
 
+  .section-1 p {
+    text-align: left;
+    width: 400px;
+  }
 
+  .btn-div-1 {
+    display: flex;
+    justify-content: flex-start;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
+  .grid-container-1 {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    gap: 20px;
+  }
+  .carousel-item .dialogbox-1{
+    display: none;
+  }
+  .carousel-item .dialogbox-2{
+    display: block;
+  }
+  .carousel-container .paragraph{
+    margin-bottom:800px;
+    width: 502px;
+  }
+}
 
 @media (max-width: 800px) {
   .hideOnMobile {
