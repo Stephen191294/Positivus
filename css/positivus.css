@@ -957,6 +957,10 @@ footer .footer-social {
   display: none;
 }
 
+.last-footer-logo{
+  display: none;
+}
+
 .top-icons {
   cursor: pointer;
   display: flex;
@@ -977,6 +981,8 @@ footer .footer-social {
   margin-left: 60px;
 }
 
+
+/*tablet*/
 @media (min-width: 600px) {
   .section-1 {
     position: relative;
@@ -1013,6 +1019,26 @@ footer .footer-social {
   .carousel-container .paragraph{
     margin-bottom:800px;
     width: 502px;
+  }
+
+  .dialogbox-div{
+    width: 500px;
+  }
+
+  .section-3-btn-div{
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .section-3{
+  
+    
+  }
+
+  .make-happen-img{
+    display: inline !important;
+  
+  
   }
 }
 
