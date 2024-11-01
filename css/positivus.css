@@ -1279,6 +1279,30 @@ footer .footer-social {
 }
 
 
+/*Surface Duo*/
+@media (min-width: 540px) and (max-width: 720px){
+  .section-4 {
+    width: 85%;
+    margin-top: 4.0625rem;
+    padding-left: 1.25rem;
+    padding-right: 1.875rem;
+  }
+
+
+  .carousel-item {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-right: 0;
+    margin-left: 4.375rem;
+    padding-left: 80px;
+    padding-right: 250px;
+  }
+
+}
 
 
 
