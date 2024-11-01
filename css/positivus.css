@@ -984,6 +984,48 @@ footer .footer-social {
   margin-left: 60px;
 }
 
+
+
+/*Samsung Galaxy*/
+@media (min-width: 360px) and (max-width:740px){
+  
+  
+  
+  .carousel-item {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-right: 0;
+    margin-left: 50px;
+    padding-right: 100px;
+    padding-left: 5px;
+  }
+  .carousel-container {
+    position: relative;
+    width: 120%;
+    height: auto;
+    min-height: 554px;
+    margin: auto;
+    overflow: hidden;
+    background-color: #191a23;
+    border-radius: 45px;
+    margin-top: 40px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.dialogbox-div{
+  width: 300px;
+}
+
+}
+
+
+
+
+
 /*iPhone 14*/
 @media (min-width: 430px) and (max-width: 932px){
  
