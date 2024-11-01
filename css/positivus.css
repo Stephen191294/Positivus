@@ -495,10 +495,7 @@ nav li:first-child {
 .card-span {
   display: block;
 }
-.card-block .card img {
-  max-width: 77px;
-  max-height: 77px;
-}
+
 
 .card {
   position: relative;
@@ -511,6 +508,8 @@ nav li:first-child {
   position: absolute;
   top: 30px;
   right: 20px;
+  width: 28px;
+  height: 28px;
 }
 
 .card-txt {
@@ -937,7 +936,7 @@ footer .first-input {
 
 .footer-input-div input {
   min-height: 66px;
-  /*max-width: 330px;*/
+  width: 330px;
 }
 
 footer .footer-social {
