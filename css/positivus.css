@@ -96,6 +96,7 @@ nav li:first-child {
   height: 165px;
   font-size: 38px;
   
+  
 }
 
 .section-1 p {
@@ -982,6 +983,27 @@ footer .footer-social {
   gap: 30;
   margin-left: 60px;
 }
+
+/*iPhone 14*/
+@media (min-width: 430px) and (max-width: 932px){
+ 
+  .carousel-item {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-right: 0;
+    margin-left: 50px;
+    padding-right: 90px;
+  }
+  
+}
+
+
+
+
 
 /*tablet*/
 @media (min-width: 600px) {
