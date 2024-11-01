@@ -88,3 +88,6 @@ setupToggle('actionStep1', 'toggleIcon1', 'image/Icon(1).png', 'image/Negativeic
 setupToggle('actionStep2', 'toggleIcon2', 'image/Icon(1).png', 'image/Negativeicon.png');
 setupToggle('actionStep3', 'toggleIcon3', 'image/Icon(1).png', 'image/Negativeicon.png');
 setupToggle('actionStep4', 'toggleIcon4', 'image/Icon(1).png', 'image/Negativeicon.png');
+
+
+alert('this is an alert click ok')
