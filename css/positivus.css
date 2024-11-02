@@ -1026,7 +1026,7 @@ footer .footer-social {
   }
 
   .carousel-item {
-    width: 100%;
+    width: 101%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -1034,12 +1034,12 @@ footer .footer-social {
     position: relative;
     margin-right: 0;
     margin-left: 50px;
-    padding-right: 100px;
-    padding-left: 5px;
+    padding-right: 115px;
+    padding-left: 20px;
   }
   .carousel-container {
     position: relative;
-    width: 107%;
+    width: 100%;
     height: auto;
     min-height: 554px;
     margin: auto;
