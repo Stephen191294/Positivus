@@ -486,7 +486,7 @@ nav li:first-child {
   border: 1px solid #191a23;
   border-bottom: 6px solid #191a23;
   border-radius: 45px;
-  max-height: 98px;
+  max-height: 297px;
   max-width: 392px;
   padding: 37px;
   margin-top: 20px;
@@ -1103,6 +1103,33 @@ footer .footer-social {
     top: 0;
     right: 0;
   }
+.card-block .card{
+  max-width: 1234px;
+  max-height: 279px;
+}
+
+.card-txt {
+  margin-top: 30px;
+  display: none;
+  font-size: 20px;
+}
+
+.line {
+  margin-top: 30px;
+  display: none;
+  border: 1px solid #191a23;
+}
+
+.card-txt-1 {
+  display: none;
+  margin-top: 30px;
+}
+
+.line-1 {
+  display: none;
+}
+
+
 
   .section-1 p {
     text-align: left;
@@ -1400,8 +1427,8 @@ footer .footer-social {
     top: 0;
   }
   .card-block .card {
-    height: 159px;
-    width: 1234px;
+    max-height: 279px;
+    max-width: 1234px;
   }
   nav {
     padding-left: 100px;
@@ -1643,6 +1670,30 @@ footer .footer-social {
     max-width: 556px;
     height: 199px;
   }
+
+  
+  .card-txt {
+    margin-top: 30px;
+    display: none;
+    font-size: 20px;
+  }
+  
+  .line {
+    margin-top: 30px;
+    display: none;
+    border: 1px solid #191a23;
+  }
+  
+  .card-txt-1 {
+    display: none;
+    margin-top: 30px;
+  }
+  
+  .line-1 {
+    display: none;
+  }
+  
+
 
   .carousel-item {
     width: 100%;
