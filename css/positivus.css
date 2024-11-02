@@ -30,9 +30,9 @@ nav {
   z-index: 1000;
   padding-left: 20px;
   padding-right: 20px;
-   height: 80px;
-   padding-top: 20px;
-   padding-bottom: 20px;
+  height: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 nav img {
   width: 9rem;
@@ -181,6 +181,10 @@ nav li:first-child {
   gap: 20px;
   margin-top: 37px;
   overflow: visible;
+}
+
+#headingHideOnMobile {
+  display: none;
 }
 
 .heading-1 {
@@ -495,7 +499,6 @@ nav li:first-child {
 .card-span {
   display: block;
 }
-
 
 .card {
   position: relative;
@@ -1016,13 +1019,10 @@ footer .footer-social {
 
 /*Samsung Galaxy*/
 @media (min-width: 360px) and (max-width: 740px) {
-
-
-.section-4{
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
+  .section-4 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
   .carousel-item {
     width: 100%;
@@ -1374,17 +1374,16 @@ footer .footer-social {
     flex-direction: row;
     min-height: 347px;
   }
-  .make-happen-img{
+  .make-happen-img {
     position: absolute;
     left: 746px;
     top: 0;
   }
-  .card-block .card{
+  .card-block .card {
     height: 159px;
     width: 1234px;
-   
   }
-  nav{
+  nav {
     padding-left: 100px;
     padding-right: 135px;
   }
@@ -1393,15 +1392,69 @@ footer .footer-social {
     height: 3.125rem;
     font-size: 20px !important;
   }
- nav ul{
-  display: flex;
-  gap: 40px;
- }
-  .hamburger{
+  nav ul {
+    display: flex;
+    gap: 40px;
+  }
+  .hamburger {
     display: none;
   }
-  .quote-btn{
+  .quote-btn {
     display: block;
+  }
+  .box {
+    position: relative;
+  }
+  .box .arrow-text {
+    display: block;
+    color: #191a23;
+    position: absolute;
+    bottom: 60px;
+    left: 115px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .box-3 {
+    position: relative;
+  }
+
+  .box-2 {
+    position: relative;
+  }
+  .box-2 .arrow-text {
+    display: block;
+    color: #191a23;
+    position: absolute;
+    bottom: 60px;
+    left: 115px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .box-3 .arrow-text-2 {
+    display: block;
+    color: #ffffff;
+    position: absolute;
+    bottom: 60px;
+    left: 115px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .heading-2 {
+    display: none;
+  }
+  #headingHideOnMobile {
+    display: block;
+  }
+
+  #headingHideOnMobile .heading-1-div p {
+    margin-left: 20px;
+  }
+  #headingHideOnMobile .heading-1-div h2 {
+    width: 250px;
+    padding: 0;
   }
 }
 
