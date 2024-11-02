@@ -452,6 +452,10 @@ nav li:first-child {
   margin-left: 20px;
 }
 
+.slider-container-1-secondary{
+  display: none;
+}
+
 .card-slider {
   display: flex;
   gap: 40px;
@@ -1456,7 +1460,44 @@ footer .footer-social {
     width: 250px;
     padding: 0;
   }
+
+  .slider-container{
+    display: none;
+  }
+  .slider-container-1-secondary {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #191a23;
+    color: #ffffff;
+    border-radius: 45px;
+    max-width: 1232px;
+    height: 100%;
+    margin-top: 80px;
+    padding: 70px 0 93px 0;
+    overflow: hidden;
+  }
+  .slider-container-1-secondary p {
+    font-size: 18px;
+    max-width: 286px;
+    max-height: 115px;
+  }
+
+  .slider-container-1-secondary img {
+    margin-top: 20px;
+  }
+  .slider-container-1-secondary .card-1 {
+    border-right: 1px solid #ffffff;
+    padding-right: 64px;
+    padding-left: 64px;
+  }
+  .slider-container-1-secondary .card-1:last-child {
+    border: none;
+  }
+  .slider-container-1-secondary .card-1:nth-child(2) {
+    padding-left: 64px;
+  }
 }
+
 
 /* Ultra large devices (extra-wide screens, 1400px and up) */
 @media (min-width: 1400px) {
