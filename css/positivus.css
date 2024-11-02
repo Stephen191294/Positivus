@@ -1620,12 +1620,12 @@ footer .footer-social {
 }
 
 .form-container input{
-  width: 556px;
+  max-width: 556px;
   height: 59px;
 }
 
 .form-container textarea{
-  width: 556px;
+  max-width: 556px;
   height: 199px;
 }
 
