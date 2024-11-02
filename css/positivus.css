@@ -494,7 +494,9 @@ nav li:first-child {
   margin-top: 20px;
   box-sizing: border-box;
   white-space: wrap;
+  -webkit-tap-highlight-color: transparent;
 }
+
 
 
 .card-block .card p {
