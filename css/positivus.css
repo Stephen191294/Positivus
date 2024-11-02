@@ -486,7 +486,8 @@ nav li:first-child {
   border: 1px solid #191a23;
   border-bottom: 6px solid #191a23;
   border-radius: 45px;
-  min-height: 98px;
+  max-height: 98px;
+  max-width: 392px;
   padding: 37px;
   margin-top: 20px;
   box-sizing: border-box;
